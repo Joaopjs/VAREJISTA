@@ -17,6 +17,7 @@ namespace WebPage.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         List<Produto> list = new List<Produto>();
+        HttpResponseMessage response = new HttpResponseMessage();
 
         private static string EnderecoApi = "http://localhost:54034/Produto/";
 
@@ -31,27 +32,45 @@ namespace WebPage.Controllers
             {
                 EnderecoApi = EnderecoApi + "lista";
             }
-           
             
             HttpClient httpClient = new HttpClient();
 
-            HttpResponseMessage response = httpClient.GetAsync(EnderecoApi).GetAwaiter().GetResult();
+            try
+            {
+                response = httpClient.GetAsync(EnderecoApi).GetAwaiter().GetResult();
+
+            }
+            catch (Exception)
+            {
+
+                HttpResponseMessage response = new HttpResponseMessage();
+                response.StatusCode = HttpStatusCode.BadRequest;
+            }
 
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                var res = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                try
+                {
+                    var res = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
-                if (res.Length > 2)
+                    if (res.Length > 2)
+                    {
+                        list = JsonConvert.DeserializeObject<List<Produto>>(res);
+
+                        return View(list);
+                    }
+                    else
+                    {
+                        return View(list);
+                    }
+                }
+                catch (Exception)
                 {
-                    list = JsonConvert.DeserializeObject<List<Produto>>(res);
-                    
                     return View(list);
+
                 }
-                else
-                {
-                    return View(list); 
-                }
+               
 
             }
             else

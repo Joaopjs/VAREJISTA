@@ -24,8 +24,8 @@ namespace WebApplication3.Data
 
         public IMongoDatabase OpenDb()
         {
-            var client = new MongoClient("mongodb://VarejistaLojaDB_001:uQJ72MA0rUTVcj6S@cluster0-shard-00-00.fuq97.mongodb.net:27017,cluster0-shard-00-01.fuq97.mongodb.net:27017,cluster0-shard-00-02.fuq97.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority");
-            database = client.GetDatabase("VarejistaLojaDB_001");
+            var client = new MongoClient(Config.Configurar.StringConnection);
+            database = client.GetDatabase(Config.Configurar.NomeTabela);
 
             return database;
         }

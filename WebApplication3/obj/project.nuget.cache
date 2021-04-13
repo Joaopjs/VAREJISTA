@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "46XKC1nYxhyIQ+mlWZALmdvYbOK/AUHwGItFneaEr3gpmVO3OdC2T76jye6ysky6wyKrFW8GTE3/QHng/P9EYQ==",
+  "dgSpecHash": "v8wQer7ebKef89Thc5jYqW3TFJkUDd177pi3RRNqdOLwiwZ1ideNVlATJxcWiVf1HzFctHHN6Mi9fxmEvL8cGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
+  "projectFilePath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joao\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\joao\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

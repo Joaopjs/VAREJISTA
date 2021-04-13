@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebPage\\WebPage.csproj": {}
+    "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebPage\\WebPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebPage\\WebPage.csproj": {
+    "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebPage\\WebPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebPage\\WebPage.csproj",
+        "projectUniqueName": "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebPage\\WebPage.csproj",
         "projectName": "WebPage",
-        "projectPath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebPage\\WebPage.csproj",
+        "projectPath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebPage\\WebPage.csproj",
         "packagesPath": "C:\\Users\\joao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\WebPage\\obj\\",
+        "outputPath": "C:\\Users\\joao\\source\\repos\\WebApplication3\\VAREJISTA\\WebPage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
